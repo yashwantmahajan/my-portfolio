@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwant | Video Editor & Developer</title>
+    <link rel="stylesheet" href="Index.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Yashwant<span class="dot">.Edits</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#technology" class="nav-link">Tech</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+
+            <!-- Left Side: Text -->
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-name">Yashwant W. Mahajan</h1>
+                <div class="dynamic-text-container">
+                    I am a <span class="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-statement">Transforming raw footage into cinematic reality and coding logic into digital
+                    solutions.</p>
+
+                <div class="hero-buttons">
+                    <a href="assets/YashwantMahajanResume.pdf" download="YashwantMahajanResume" class="btn btn-primary">Download CV <i class="fas fa-download"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yashwantmahajan" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/yashwant__84?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/918554826448" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Orbit Animation -->
+            <div class="hero-visual">
+                <div class="orbit-container">
+                    <!-- Central Profile Image -->
+                    <div class="center-image">
+                        <!-- Placeholder for user image, using a generic avatar if no file present, but user said "Profile2.jpg" -->
+                        <img src="LOGO.jpg" alt="Profile" id="profile-photo">
+                    </div>
+
+                    <!-- Revolving Icons -->
+                    <div class="orbit-ring">
+                        <!-- Tech Icons -->
+                        <div class="planet p-1"><i class="fab fa-html5"></i></div>
+                        <div class="planet p-2"><i class="fab fa-css3-alt"></i></div>
+                        <div class="planet p-3"><i class="fab fa-js"></i></div>
+                        <div class="planet p-4"><i class="fab fa-react"></i></div>
+                        <!-- Video Icons (using generic film icons for tools) -->
+                        <div class="planet p-5"><i class="fas fa-film"></i></div> <!-- Premiere -->
+                        <div class="planet p-6"><i class="fas fa-video"></i></div> <!-- DaVinci -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <h3>Developer</h3>
+                    <p>Computer Engineering student building modern web applications.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-photo-video icon"></i>
+                    <h3>Video Editor</h3>
+                    <p>2+ Years experience editing Reels, YouTube, and Cinematic vlogs.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-brain icon"></i>
+                    <h3>Problem Solver</h3>
+                    <p>Combining creativity with logic to create unique solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-dim">
+        <div class="container">
+            <h2 class="section-title">Services & Charges</h2>
+            <div class="services-grid">
+
+                <!-- Reel Editing -->
+                <div class="service-card featured">
+                    <div class="tag">POPULAR</div>
+                    <div class="s-icon"><i class="fab fa-instagram"></i></div>
+                    <h3>Reels Editing</h3>
+                    <div class="price">₹1,000<span>/ video</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Trendy Cuts & Audio</li>
+                        <li><i class="fas fa-check"></i> Captioning</li>
+                        <li><i class="fas fa-check"></i> 1 Day Delivery</li>
+                    </ul>
+                </div>
+
+                <!-- YouTube -->
+                <div class="service-card">
+                    <div class="s-icon"><i class="fab fa-youtube"></i></div>
+                    <h3>YouTube Video</h3>
+                    <div class="price">₹1,299 <span>/ video</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Storytelling Edit</li>
+                        <li><i class="fas fa-check"></i> Color Grading</li>
+                        <li><i class="fas fa-check"></i> Motion Graphics</li>
+                    </ul>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="service-card">
+                    <div class="s-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <div class="price">₹2,999 <span>/ page</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Modern UI/UX</li>
+                        <li><i class="fas fa-check"></i> SEO Optimized</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2 class="section-title">Tech & Tools</h2>
+            <div class="tech-wrapper">
+                <h3>Video Editing</h3>
+                <div class="tech-tags">
+                    <span>Premiere Pro</span>
+                    <span>DaVinci Resolve</span>
+                    <span>After Effects</span>
+                    <span>CapCut Pro</span>
+                </div>
+
+                <h3 style="margin-top: 20px;">Development</h3>
+                <div class="tech-tags">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yashwant Walmik Mahajan. Made with <i class="fas fa-heart"
+                style="color: var(--primary-color);"></i></p>
+    </footer>
+
+    <script src="Index.js"></script>
+</body>
+
+</html>

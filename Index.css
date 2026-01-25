@@ -1,0 +1,507 @@
+/* 🔴 RED THEME - PREMIUM DARK MODE */
+:root {
+    --primary-color: #e50914;
+    /* Netflix Red */
+    --primary-glow: rgba(229, 9, 20, 0.5);
+    --dark-bg: #050505;
+    --card-bg: #121212;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --gradient-red: linear-gradient(135deg, #e50914 0%, #8b0000 100%);
+    --gradient-dark: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+/* 🧭 NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo .dot {
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* 💫 HERO SECTION - THE CORE VISUAL */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+    background: radial-gradient(circle at 70% 50%, rgba(229, 9, 20, 0.1), transparent 60%);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.hero-name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #fff, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TYPING TEXT */
+.dynamic-text-container {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.typing-text {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-statement {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--gradient-red);
+    color: white;
+    box-shadow: 0 5px 20px rgba(229, 9, 20, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(229, 9, 20, 0.6);
+}
+
+.btn-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    background: rgba(229, 9, 20, 0.1);
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* 🪐 ORBIT ANIMATION SYSTEM */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 320px;
+    height: 500px;
+    /* Space for orbit */
+    align-items: center;
+}
+
+.orbit-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 50px rgba(229, 9, 20, 0.4);
+}
+
+.center-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orbit-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    animation: orbit 20s linear infinite;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--card-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Position Calculation (manual for 6 items) */
+    /* top/left is relative to ring center. */
+    /* We use calc with sin/cos logic or simple percentages */
+}
+
+/* Planet Positions (approximate distribute around circle) */
+.p-1 {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+/* Rotation counteracts orbit if we want icons upright, but complex. Let's just fix position */
+.p-2 {
+    top: 25%;
+    right: -20px;
+}
+
+.p-3 {
+    bottom: 25%;
+    right: -20px;
+}
+
+.p-4 {
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-5 {
+    bottom: 25%;
+    left: -20px;
+}
+
+.p-6 {
+    top: 25%;
+    left: -20px;
+}
+
+/* Keep icons upright by counter-rotating inside the planet */
+.planet i {
+    animation: counter-orbit 20s linear infinite;
+}
+
+@keyframes counter-orbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* 📂 SECTIONS */
+.section {
+    padding: 100px 0;
+}
+
+.bg-dim {
+    background: #080808;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* CARDS */
+.about-grid,
+.services-grid,
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-card,
+.service-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.about-card:hover,
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
+}
+
+.icon,
+.s-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* SERVICE CARD SPECIFICS */
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.service-card ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.service-card li {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+.service-card li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.featured {
+    border: 1px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary-color);
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* TECH TAGS */
+.tech-tags span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.tech-tags span:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+}
+
+/* MOBILE RESPONSIVE */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-visual {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons,
+    .dynamic-text-container,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+}
